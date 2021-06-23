@@ -16,10 +16,7 @@ def memory_usage_example():
     nums_list = [*range(1000)]
     
     return sys.getsizeof(nums_list) 
-    
-%load_ext memory_profiler
 
-%mprun runtime_codeprof.py
 
-from ru
+import runtime_codeprof
 
