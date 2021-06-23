@@ -1,0 +1,15 @@
+Beautiful is better than ugly
+Explicit is better than implicite
+Simples is better than complex
+Complex is better than complicated
+Flat is better than nested
+Sparse is better than dese
+Readability COUNTS.
+
+Special cases aren't special enought to
+BREAK the rules.
+Although praticality beats purity
+
+Errors should never pass silently
+Unlsees explicitly sileced.
+In the face of ambiguity, refuse the temptation to guess

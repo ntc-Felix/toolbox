@@ -1,0 +1,21 @@
+Built_in Types:
+    - List []
+    - Tuple ()
+    - Set
+    - Dict {}
+
+Built-in Functions:
+    - print()
+    - len()
+    - range()
+    - round()
+    - enumerate()
+    - map()
+    - zip()
+
+Built-in modules:
+    - OS
+    - sys
+    - itertools
+    - collections
+    - math
