@@ -18,5 +18,17 @@ def memory_usage_example():
     return sys.getsizeof(nums_list) 
 
 
-import runtime_codeprof
+from runtime_codeprof import convert_units
+
+#%load_ext memory_profiler
+
+heroes = ['Batman','Superman','Wonder Woman']
+
+hts = np.array([188.0, 191.0, 183.0])
+
+wts = np.array([95.0, 101.0, 74.0])
+
+#%mprun -f convert_units convert_units(heroes,hts,wts)
+
+
 
