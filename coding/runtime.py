@@ -64,5 +64,3 @@ def comparing_runtime_example():
     diff = (f_time.average - l_time.average) * (10*9)
 
     return(print('l_time better than f_time by {} ns'.format(diff)))
-
-

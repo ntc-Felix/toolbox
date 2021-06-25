@@ -1,15 +1,17 @@
 Beautiful is better than ugly
-Explicit is better than implicite
+Explicit is better than implicit
 Simples is better than complex
 Complex is better than complicated
 Flat is better than nested
-Sparse is better than dese
+Sparse is better than dense
 Readability COUNTS.
 
 Special cases aren't special enought to
 BREAK the rules.
+
 Although praticality beats purity
 
 Errors should never pass silently
-Unlsees explicitly sileced.
+Unless explicitly sileced.
+
 In the face of ambiguity, refuse the temptation to guess
