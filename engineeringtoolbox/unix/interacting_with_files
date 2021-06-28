@@ -1,0 +1,17 @@
+cat = look what is inside a txt file, commonly used to large files
+
+less = one page is displayed at a time
+
+
+
+# CAT example:
+
+    Before you rename or delete files, you may want to 
+    have a look at their contents. The simplest way 
+    to do this is with cat, which just prints the 
+    contents of files onto the screen. 
+
+    Suppose you are at /home/repl/people and wants to see 
+    what is inside the file agarwal.txt
+
+    - cat agarwal.txt

@@ -1,0 +1,78 @@
+pwd = tells you where directory you are.
+
+ls = lists what files are in this directory
+
+cd = open folder
+
+cd .. goes back in the directory path
+
+cp = copy files
+
+mv = move files from a directory to another, can be used to rename files
+
+rm = deletes a file
+
+rmdir = deletes a directory
+
+mkdir = creates a directory
+
+# Cp example:
+    if you are in the directory home/repl/
+    and wants to make a copy of the file 'summer.csv'
+    stored in home/repl/seasonal into the paste 
+    home/repl/backup, then you have to write:
+
+    - cp seasonal/summer.csv backup/summer.csv
+
+# Cp example 2: Multiple files
+
+    if you are in the directory home/repl/
+    and wants to make a copy of the file 'summer.csv'
+    AND the file 'spring.csv'
+    stored in home/repl/seasonal into the paste 
+    home/repl/backup, then you have to write:
+
+    - cp seasonal/spring.csv seasonal/summer.csv backup
+
+# MV example: moving 2 files
+
+    You are in /home/repl, 
+    which has sub-directories seasonal and backup. 
+    Using a single command, move spring.csv and 
+    summer.csv 
+    from seasonal to backup.
+
+    - mv seasonal/spring.csv seasonal/summer.csv backup
+
+
+# MV example 2 : USING MV TO RENAME FILES
+
+    lets suppose you are in the directory
+    /home/repl/seasonal
+    and wants to change winter.csv file name to
+    winter.csv.bck
+
+    - mv winter.csv winter.csv.bck
+
+# RM example: deleting a file
+
+    you are in /home/repl, and wants to delete a file
+    that is in /home/repl/seasonal
+
+    - rm seasonal/filename.txt
+
+# RMDIR example: deleting a directory
+
+    if you are in /home/repl and wants to delete
+    the folder seasonal
+
+    - rmdir seasonal
+
+# MKDIR example: creating a new folder
+
+    now you have deleted seasonal, you change your mind
+    and wants to create it again
+
+    - mkdir seasonal
+
+
