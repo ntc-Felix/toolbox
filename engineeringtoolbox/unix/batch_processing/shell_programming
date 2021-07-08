@@ -1,0 +1,27 @@
+To create a shell variable, you simply assign a value to a name:
+
+    training=seasonal/summer.csv
+
+    note:
+        it must be write as it was written in the last example
+        variablename=...
+        with no spaces between the words
+
+How can I repeat a command many times?
+
+    Shell variables are also used in loops, which repeat commands many times. If we run this command:
+
+        for filetype in gif jpg png; do echo $filetype; done
+
+    it will print:
+        gif
+        jpg
+        png
+    
+LOOP EXAMPLE:
+
+    if you are in a directory with a lot of csv files and wants to print
+    the first rows that contains '2017-07' in each file, you can:
+
+        for file in directory/*.csv; do grep 2017-07 $file | tail -n 1; done
+

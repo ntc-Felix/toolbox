@@ -1,0 +1,83 @@
+-grep: 
+
+    takes a piece of text followed by one or more 
+    filenames and prints all of the lines in those files 
+    that contain that text
+
+    -c: print a count of matching lines rather than the lines themselves
+
+    -h: do not print the names of files when searching multiple files
+
+    -i: ignore case (e.g., treat "Regression" and "regression" as matches)
+
+    -l: print the names of files that contain matches, not the matches
+
+    -n: print line numbers for matching lines
+
+    -v: invert the match, i.e., only show lines that don't match
+
+-paste:
+    merge lines of files
+
+- sort:
+    As its name suggests, sort puts data in order. 
+    By default it does this in ascending alphabetical 
+    order, but the flags -n and -r can be used to sort 
+    numerically and reverse the order of its output, 
+    while -b tells it to ignore leading blanks and 
+    -f tells it to fold case (i.e., be case-insensitive).  
+
+- uniq:
+    remove duplicated lines. More specifically,
+    it removes adjacent duplicated lines.
+
+    if a file contains:
+    2017-07-03
+    2017-07-03
+    2017-08-03
+    2017-08-03
+
+    uniq will produce:
+    2017-07-03
+    2017-08-03
+
+    but if it contains:
+    2017-07-03
+    2017-08-03
+    2017-07-03
+    2017-08-03
+    it will print all 4 lines
+
+- GREP: example
+
+    Print the contents of all of the lines containing 
+    the word " molar "in seasonal/autumn.csv by running 
+    a single command while in your home directory. 
+    
+    - grep molar seasonal/autumn.csv
+
+- GREP: example 2
+    
+    Invert the match to find all of the lines that 
+    don't contain the word molar in seasonal/spring.csv, 
+    and show their line numbers
+
+    - grep -n -v seasonal/spring.csv
+
+- GREP: example 3
+
+    Count how many lines contain 
+    the word incisor in autumn.csv and 
+    winter.csv combined.
+
+    - grep -c incisor seasonal/autumn.csv seasonal/winter.csv
+
+- SORT: example
+
+    sort the names of the teeth in seasonal/winter.csv 
+    (not summer.csv) in descending alphabetical 
+    order. To do this, extend the pipeline with 
+    a sort step.
+
+    -cut -d, -f 2 seasonal/winter.csv | grep -v Tooth | sort -r 
+

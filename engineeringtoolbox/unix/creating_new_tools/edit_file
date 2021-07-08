@@ -1,0 +1,41 @@
+nano:
+
+    If you type nano filename, it will open filename for editing 
+    (or create it if it doesn't already exist). You can move around with 
+    the arrow keys, delete characters using backspace, and do other operations with control-key combinations:
+
+    Ctrl + K: delete a line.
+    Ctrl + U: un-delete a line.
+    Ctrl + O: save the file ('O' stands for 'output'). You will also need to press Enter to confirm the filename!
+    Ctrl + X: exit the editor.
+
+How can I save commands to re-run later?
+    
+    But since the commands you type in are just text, 
+    you can store them in files for the shell to run over and over again. 
+    To start exploring this powerful capability, put the following command 
+    in a file called headers.sh
+
+creating function:
+
+    if you run:
+        nano dates.sh
+    
+    you will create a file named "dates.sh" and will be inside this file
+    in the shell prompt
+
+    then you can type:
+        cut -d, -f 1 seasonal/*.csv
+
+        then Ctl + O to save the file
+        press ENTER to confirm file name
+        and Ctrl + X to exist the file
+    
+    here we created a function called "dates.sh" that extracts the dates
+    from the files store in the "seasonal" directory, located at the first column
+    of the csv files.
+
+    to run the function in bash you need to type:
+        bash dates.sh
+
+

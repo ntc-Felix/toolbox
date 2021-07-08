@@ -44,7 +44,6 @@ mkdir = creates a directory
 
     - mv seasonal/spring.csv seasonal/summer.csv backup
 
-
 # MV example 2 : USING MV TO RENAME FILES
 
     lets suppose you are in the directory

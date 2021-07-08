@@ -1,8 +1,25 @@
-cat = look what is inside a txt file, commonly used to large files
+cat = 
+    look what is inside a txt file, commonly used to 
+    large files
 
-less = one page is displayed at a time
+less = 
+    one page is displayed at a time
 
+head = 
+    print the first few lines(10 or less) of a file
 
+man = 
+    short term for "manual", it literally show you a manual
+    of the command that you right in front of it
+
+tail = 
+    the opposite of head (shows LAST 10 lines)
+
+cut = 
+    remove sections from each line of files
+
+history = 
+    see the last few commands you wrote
 
 # CAT example:
 
@@ -15,3 +32,70 @@ less = one page is displayed at a time
     what is inside the file agarwal.txt
 
     - cat agarwal.txt
+
+# LESS example:
+
+    Suppose you are in the same situation as the previous example.
+    But this time you dont want to see the entire content of the
+    file. Instead, you want to see it page by page.
+
+    to do that, you just need to type:
+
+    - less agarwal.txt
+
+    Now lets say you want to open 2 files in the same directory
+    to do that:
+
+    - less directory/file1.csv directory/file2.csv
+
+    Here you can press:
+        SPACEBAR: to page down
+        n: to go to the second file
+        q: quit
+    
+- HEAD example:
+
+    If you are in the directory seasonal
+    and wants to see the first few lines of the file
+    summer.csv, you will type:
+
+    - head seasonal/summer.csv
+
+- HEAD example (just the 5 first lines):
+
+    -head -n 5 seasonal/winter.csv
+
+- ls use cases:
+
+    ls: prints all files in the directory you are
+
+    ls -R -F: all files in the directory that you are and
+        in another directories that are inside this directory
+
+- MAN example:
+
+    man head: it will show what the command head does
+
+- TAIL example:
+
+    If you are in the directory seasonal
+    and wants to see the LAST few lines of the file
+    summer.csv, you will type:
+
+    - tail seasonal/summer.csv
+
+- TAIL example 2: showing the 7 last lines
+
+    - tail -n +7 seasonal/summer.csv
+
+- CUT example:
+
+    which means "select columns 2 through 5 and columns 8,
+     using comma as the separator". 
+     cut uses -f (meaning "fields") to specify columns and 
+     -d (meaning "delimiter") to specify the separator. 
+     You need to specify the latter because some files may 
+     use spaces, tabs, or colons to separate columns.
+
+    cut -f 2-5, 8 -d , values.csv
+

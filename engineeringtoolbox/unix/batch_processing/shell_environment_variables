@@ -1,0 +1,73 @@
+HOME:
+
+    Purpose:
+    User's home directory
+
+    value:
+    /home/repl
+
+PWD:
+    Present working directory
+
+SHELL:
+    
+    Purpose:
+    Which shell program is being used
+
+    value:
+    /bin/bash
+
+USER:
+    
+    Purpose:
+    User's ID
+
+    value:
+    repl
+
+SET:
+
+    Purpose:
+    Get a complete list of shell environment variables
+
+ECHO:
+    simple way to find a variable's value
+
+OSTYPE:
+    
+    holds  the name of the kind of operating system you are using
+
+SET USE CASE 1:
+
+    If you are trying to get a specific information
+    (HISTFILESIZE in this example) you can:
+
+        set | grep HISTFILESIZE
+
+ECHO EXAMPLE 1:
+
+    IN: echo hello DataCamp!
+
+    OUT: hello DataCamp!
+
+ECHO EXAMPLE 2:
+
+    IN: echo USER
+
+    OUT: USER
+
+    IN: echo $USER
+
+    OUT: repl
+
+    sou if tou want to get the value of a variable called X, you must write $X
+
+ECHO EXAMPLE 3:
+
+    If you want to know the operating system you are using,
+    you just need to type:
+
+        echo $OSTYPE
+
+
+
