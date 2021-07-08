@@ -38,4 +38,24 @@ creating function:
     to run the function in bash you need to type:
         bash dates.sh
 
+COUNTING RECORDS EXAMPLE:
+
+    nano count-records.sh
+
+    tail -q -n +2 $@ | wc -1
+
+    bash count-records.sh seasonal/*.csv > num-records.out
+
+>SELECTING COLUMN:
+    
+    As well as $@, the shell lets you use $1, $2, and 
+    so on to refer to specific command-line parameters. 
+    You can use this to write commands that feel simpler or more natural than the shell's. 
+    For example, you can create a script called column.sh that selects a single column from a 
+    CSV file when the user provides the filename as the first parameter and the column as the second:
+
+    cut -d , -f $2 $1
+
+    bash column.sh seasonal/autumn.csv 1
+
 

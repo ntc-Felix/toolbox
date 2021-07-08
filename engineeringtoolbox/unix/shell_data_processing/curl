@@ -1,0 +1,76 @@
+What is curl?
+
+    is short for Client for URLs
+
+    is a Unix command line tool
+
+    transfer data to and from a server
+
+    is used to download data from HTTP(s) sites and FTP servers
+
+Checking curl installation:
+
+    type in command line man curl
+
+Curl syntax:
+
+    curl [option flags] [url]
+
+Curl supports HTTP, HTTPS, FTP and SFTP requests.
+for a full list of the options available write:
+
+    curl --help
+
+USE CASES:
+
+    A single file is stored at:
+
+    https://websitename.com/datafilename.txt
+
+    To save the filw withs its original name datafilename.txt,
+    use the option flag -O (in uppercase)
+
+        curl -O https://websitename.com/datafilename.txt
+
+    To rename the file, use the lower case "-o" + the new file name:
+
+        curl -o renameddatafilename.txt https://websitename.com/datafilename.txt
+    
+    Oftentimes, a server will host multiple data files, with similar filenames:
+
+        https://websitename.com/datafilename001.txt
+        https://websitename.com/datafilename002.txt
+        https://websitename.com/datafilename003.txt
+        https://websitename.com/datafilename004.txt
+
+    Instead of curl each file individually, we can use wildcards (*)
+    to download all the files at once.
+
+        curl -O https://websitename.com/datafilename*.txt 
+    
+    Another option is to use Globbing Parser:
+    The following will download every file sequentially starting
+    with datafilename001.txt and end with the datafilename100.txt
+
+        curl -O https://websitename.com/datafilename[001-100].txt
+
+    Increment through the files and download every Nth file
+    (e.g.datafilename010.txt,datafilename020.txt, ..., datafilename100.txt)
+
+        curl -O https://websitename.com/datafilename[001-100:10].txt
+
+    Sometimes Internet can time out. To make sure that out download progress
+    is not lost, curl has two flags:
+
+    -L redirects the http url if a 300 error code occurs.
+
+    -C Resumes a previous file transfer if it times out before completion
+
+    Putting everything together:
+
+        curl -L -O -C https://websitename.com/datafilename[001-100].txt
+
+    note: All option flags come before the URL
+    but the flags order doesn't matter
+
+
