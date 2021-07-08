@@ -1,0 +1,38 @@
+What is wget?
+
+    abstract: It's a command line tool for downloading data
+
+    derive its name from World Wide Web and get
+
+    native to Linux but compatible for all operating systems
+
+    used to download data from http(s) and FTP
+     
+    better than curl at downloading multiple files recursively
+
+Checking Wget installation:
+
+    which wget
+
+    this will return the location of where wget is installed
+
+Installation:
+
+    For Linux users:
+
+        sudo apt-get install wget
+
+    MacOS: use homebrew and run brew install wget
+
+    Windows: download via gnuwin32
+
+Browsing the wget manual:
+
+    once installation is complete, use the 'man' command to print 'wget' manual:
+
+Basic syntax:
+
+    wget [option flags] [URL]
+
+
+ 
